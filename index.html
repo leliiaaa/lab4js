@@ -6,31 +6,36 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Лабораторна робота №5. game</h1>
-    
-    <div id="setup" class="controls">
-        <label>Оберіть складність:</label>
-        <select id="difficulty">
-            <option value="">--Будь ласка, оберіть--</option>
-            <option value="lazy">Лінивий (Lazy)</option>
-            <option value="normal">Звичайний (Normal)</option>
-            <option value="catchme">Спіймай, якщо зможеш (Hard)</option>
-        </select>
+    <div class="container">
+        <h1>Лабораторна робота №5. game</h1>
 
-        <label>Колір:</label>
-        <select id="color">
-            <option value="">--Будь ласка, оберіть--</option>
-            <option value="red">Червоний</option>
-            <option value="green">Зелений</option>
-            <option value="blue">Синій</option>
-        </select>
+        <div id="setup" class="panel controls-panel">
+            <div class="control-group">
+                <label for="difficulty">Оберіть складність:</label>
+                <select id="difficulty">
+                    <option value="">--Будь ласка, оберіть--</option>
+                    <option value="lazy">Легкий (Easy)</option>
+                    <option value="normal">Звичайний (Normal)</option>
+                    <option value="catchme">Спіймай, якщо зможеш (Hard)</option>
+                </select>
+            </div>
+
+            <div class="control-group">
+                <label for="color">Колір:</label>
+                <select id="color">
+                    <option value="">--Будь ласка, оберіть--</option>
+                    <option value="red">Червоний</option>
+                    <option value="green">Зелений</option>
+                    <option value="blue">Синій</option>
+                </select>
+            </div>
 
         <button id="start-btn">Старт</button>
     </div>
 
-    <div id="game-info" style="display:none;">
-        <div class="stats">Рахунок: <span id="score">0</span></div>
-        <div class="stats">Залишилось часу: <span id="timer">0</span></div>
+    <div id="game-info" class="panel stats-panel" style="display:none;">
+        <div class="stats-box">Рахунок: <span id="score">0</span></div>
+        <div class="stat-box timer-box">Залишилось часу: <span id="timer">0</span></div>
     </div>
 
     <div id="game-field">
